@@ -13,13 +13,34 @@
 
     <body>
         <header>
-            
+            <h1 class="title">GETTING THINGS DONE</h1>
         </header>
 
-        <main>
-            
-        </main>
+        <div>
+            <!--Main Task Input Bar-->
+            <input type="text" placeholder="Add New Task & Get Things Done..." id="item">
+            <button id="addTask">+</button>
+        </div>
+        
+        <div>
+            <!--Choosing Date-->
+            <label><h2>Task Due Date:</h2></label>
+            <input id ="dueDate" type="date" name="party">
+        </div>
 
+        <!--Display Area-->
+        <div class="container">
+			<!-- InComplete Tasks -->
+			<ul class="todo" id="todo"></ul>
+
+			<!-- Complete Tasks -->
+			<ul class="todo" id="completed"></ul>
+		</div>
+
+        <footer>
+            <!--Place Interactive Buttons-->
+
+        </footer>
         
         <script src="js/myToDoApp.js"></script>
     </body>
