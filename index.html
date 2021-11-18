@@ -8,38 +8,95 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--CSS Styling-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="css/stylesheet.css">
     </head>
 
     <body>
+        <div class="container-fluid">
 
-        <header>
-            <h1 class="title">GETTING THINGS DONE</h1>
-            <div>
-                <!--Main Task Input Bar-->
-                <input type="text" placeholder="Add New Task & Get Things Done..." id="itemInput">
+            <div class="row">
+                <header class="bannerTop">
+                    <h1 class="title">GETTING THINGS DONE</h1>
+                </header>
+            </div>
+
+            <div class="row">
+                <!--<input type="text" placeholder="Add New Task & Get Things Done..." id="itemInput">
                 <button id="add">+</button>
                 <div class="itemDate">
-                    <!--Choosing Date-->
+                    <!--Choosing Date
                     <label><h2>Task Due Date:</h2></label>
                     <input id ="dueDate" type="date" name="party">
+                </div>-->
+                
+                <div class="col-lg-9">
+                    <div class="taskList">
+                        <h3 id='listName'>My Tasks:</h3>
+                        <ul id="myTaskList">
+                            <!-- Add the li's dynamically -->
+                        </ul>
+                    </div>
+    
+                    <div class="newTask">
+                    <h3>New Task:</h3>
+                    <form onsubmit="mySubmit(event)">
+    
+                        <div class="myDiv">
+                            <label for="taskTitle">Task:</label>
+                            <input type="text" id=taskTitle name=taskTitle
+                                title="Please enter a title. Any Alphnumeric characteres. Required field." size="69" required>
+    
+                        </div>
+                        <div class="myDiv">
+                            <label for="taskDescription">Description:</label>
+                            <input type="text" id=taskDescription name=taskDescription
+                                title="Please enter a description. Any Alphanumeric characters. Optional field." size="60">
+                        </div>
+    
+                        <div class="myDiv">
+                            <label for="taskStartDate">Start date:</label>
+                            <input type="date" id=taskStartDate name=taskStartDate
+                                title="Please select a Start date. The date must be = > today. Required." required>
+                        </div>
+                        <div class="myDiv">
+                            <label for="taskDueDate">Due date:</label>
+                            <input type="date" id=taskDueDate name=taskDueDate
+                                title="Please select a Due date. The date must be = > the Start date. Required." required>
+                        </div>
+                        <div class="myDiv">
+    
+                            <p>Please select a category:</p>
+                            <input type="radio" id="category1" name="category" value="WORK" checked>
+                            <label for="category1">WORK</label>
+                            <input type="radio" id="category2" name="category" value="PLAY">
+                            <label for="category2">PLAY</label>
+                            <input type="radio" id="category3" name="category" value="LIFE">
+                            <label for="category3">LIFE</label>
+                        </div>
+                        <div class="myDiv">
+                            <button class="buttonStyle">ADD NEW</button>
+                        </div>
+                    </form>
                 </div>
+    
+                
             </div>
-        </header>
 
-        <!--Display Area-->
-        <div class="container">
-			<!-- InComplete Tasks -->
-			<ul class="todo" id="todo"></ul>
+            <!--Display Area-->
+            <div class="container">
+                <!-- InComplete Tasks -->
+                <ul class="todo" id="todo"></ul>
 
-			<!-- Complete Tasks -->
-			<ul class="todo" id="completed"></ul>
-		</div>
+                <!-- Complete Tasks -->
+                <ul class="todo" id="completed"></ul>
+            </div>
 
-        <footer>
-            <!--Place Interactive Buttons-->
+            <footer>
+                <!--Place Interactive Buttons-->
 
-        </footer>
+            </footer>
+        </div>
         
         <script src="js/myToDoApp.js"></script>
     </body>
