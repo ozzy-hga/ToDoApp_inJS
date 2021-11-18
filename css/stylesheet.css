@@ -14,5 +14,46 @@ body{
     background-size: cover;
 }
 
+input {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 50px;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+    padding: 0 60px 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px 25px 25px 5px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    display: block;
+}
+
+.itemDate {
+    max-width: 500px;
+}
+
+#dueDate {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+}
 
 
+
+
+
+ul.todo#todo:empty:after {
+    content: 'You have nothing to-do!';
+    margin: 15px 0 0 0;
+  }
+  
+  ul.todo#completed:empty:after {
+    content: 'You have yet to complete any tasks.';
+  }
