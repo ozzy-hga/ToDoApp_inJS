@@ -1,0 +1,120 @@
+body{
+  font-family: Arial;
+  font-size: 120%;
+  margin: auto;
+  background: #fcfbe3;
+}
+
+h1{
+margin-top: 110px;
+text-align: center;
+font-size: 320%;
+font-weight: bold;
+}
+
+h2{
+margin-top: 50px;
+text-align: center;
+font-size: 180%;
+color: white;
+}
+
+h3{
+text-align: center;
+font-family: Arial;
+}
+
+.newTask{
+text-align: left;
+font-family: Arial;
+}
+
+.bannerTop {
+height: 400px;
+background-image: url('../images/long.png');
+background-repeat: no-repeat;
+background-position: center;
+color:black;
+}
+
+.bannerBottom {
+padding-top: 50px;
+height: 150px;
+color:black;
+/* background-color: #a75e6f; */
+background-color: #8a5b66;
+text-align: center;
+font-weight: bolder;
+}
+
+.menuArea{
+padding-top: 20px;
+margin-bottom: 20px;
+background: #ddd;
+border-style: solid;
+border-color: black;
+border-width: 0px;
+height: 300px;
+text-align: center;
+}
+
+.taskList{
+padding-top: 20px;
+font-weight: bolder;
+font-size: large;
+border-style: solid;
+border-color: black;
+border-width: 1px;
+}
+
+.newTask{
+padding-top: 20px;
+padding-left: 20px;
+margin-bottom: 20px;
+margin-top: 20px;
+font-weight: bolder;
+font-size: large;
+border-style: solid;
+border-color: black;
+border-width: 1px;
+}
+
+.myDiv{
+padding: 10px;
+}
+
+.buttonStyle{
+height:30px;
+width:140px;
+margin: 10px;
+color: white;
+background-color: #b096a2;
+}
+
+ /* Remove margins and padding from the list */
+ul {
+margin-right: 20px; 
+}
+
+/* Style the list items */
+ul li {
+cursor: pointer;
+position: relative;
+padding: 12px 8px 12px 12px;
+background: #ddd;
+font-size: 18px;
+transition: 0.2s;
+
+/* make the list items unselectable */
+  -webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none; 
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+background: darkgrey;
+}
+
+
