@@ -132,17 +132,17 @@ function updateDisplay(filterString) {
         case 'all':
             displayArray = taskArray;
             currentList = 'all';
-            document.getElementById('listName').innerHTML = 'My Tasks - ALL'
+            document.getElementById('listName').innerHTML = 'TO-DO LIST - ALL'
             break;
         case 'today':
             displayArray = todayTaskArray;
             currentList = 'today';
-            document.getElementById('listName').innerHTML = 'My Tasks - TODAY' 
+            document.getElementById('listName').innerHTML = 'TO-DO LIST - TODAY' 
             break;
         case 'week':
             displayArray = weekTaskArray;
             currentList = 'week';
-            document.getElementById('listName').innerHTML = 'My Tasks - WEEK' 
+            document.getElementById('listName').innerHTML = 'TO-DO LIST - WEEK' 
             break;
         default:
             console.log('updateDisplay() - no array loaded');
@@ -202,15 +202,7 @@ function mySubmit(event) {
     let taskStartDate = document.getElementById("taskStartDate").value;
     let taskDueDate = document.getElementById("taskDueDate").value;
     let taskCategory = "";
-    if (document.getElementById("category1").checked == true) {
-        taskCategory = "WORK";
-    }
-    else if (document.getElementById("category2").checked == true) {
-        taskCategory = "PLAY";
-    }
-    else {
-        taskCategory = "LIFE";
-    }
+    
 
     let myTask = new Task(taskTitle, taskDescription, taskStartDate, taskDueDate, taskCategory)
     taskArray.push(myTask);
